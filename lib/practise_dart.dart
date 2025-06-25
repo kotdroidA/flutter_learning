@@ -1,25 +1,43 @@
 
 
-import 'dart:io';
 
 void main(){
+ var myC = MyClass();
+ myC.printName('Anchal Srivastava'); // Function calling
 
-  /*print('Welcome to the dart!');
-  stdout.write('Enter your Name: ');
-  var name = stdin.readLineSync();
-  print('Hii $name');
-  // Declaration of value
-  int a;
-  // Assign
-  a = 5;  //initialization
-  print(a);
+  print(myC.Add(5, 6));
+  print(myC.Add(100,102 ));
+ final teacherName = ["Mohini","Vertika","Laxmi"];
+  print(teacherName);
+  teacherName.add("saloni");
+  print(teacherName.length);
+  print(teacherName);
 
-  a = 7;
-  print(a);*/
+ }
 
-  // inline Declaration
-  String sweetName = "Teena";
-  BigInt longValue;
-  longValue = BigInt.parse('90383800189452911264');
-  print(longValue);
-}
+ class MyClass {
+
+
+   MyClass() {
+
+     print('My class object created');
+
+   }
+
+
+
+
+
+
+   void printName(String name) {
+     //declaration
+     print('Hello My self $name.'); //definition
+   }
+
+   int Add(int num1, int num2) {
+     int sum = num1 + num2;
+     return sum;
+   }
+
+
+ }
